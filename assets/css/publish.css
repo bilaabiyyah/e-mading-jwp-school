@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    z-index: 1;
+}
+
+.notification.show {
+    display: block;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+.navbar{
+    background-color: #427D9D;
+    height: 90px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #f8f9fa;
+}
+#logoutButton {
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#logoutButton:hover {
+    color: #0a354c;
+}
+.create .btn-custom {
+    background-color: green;
+    color: white;
+}
+.create .btn-custom:hover{
+    background-color: lightgreen;
+    color: black;
+}
+.draft .btn-custom{
+    background-color: rgb(0, 49, 247);
+    color: white;
+}
+.draft .btn-custom:hover{
+    background-color: lightblue;
+    color: black;
+}
+.fa-user{
+    background-color: #F3F3F3;
+    padding: 10px;
+    border-radius: 5px;
+}
+.welcome-message{
+    padding: 20px;
+}
+.create,
+.draft{
+    padding: 20px;
+}
+.welcome-message .ml-2{
+    font-size: 15px;
+    font-weight: 600;
+}
+.title {
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+}
+.d-flex{
+    margin-bottom: 10px;
+}
+.title h3 {
+    color: #10202a;
+    font-size: 35px;
+    word-spacing: 1px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-primary{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.card-body {
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card-text {
+    line-height: 1.5;
+}
+.footer {
+    position: relative; /* Change to relative to make it relative to its normal position */
+    width: 100%;
+    background-color: #c5dbf2;
+    padding: 10px 0;
+    margin-top: 10px; /* Add some spacing between content and footer */
+
+}
+.container{
+    background-color: #c5dbf2;
+    font-weight: 600;
+    text-align: right;
+}
+.logout-header{
+    background-color: #DA1212;
+    color: white;
+}
+.create-header{
+    background-color: rgb(223, 255, 208);
+    color: rgb(1, 37, 14);
+}
+.create-header h5{
+    font-weight: 700;
+    font-size: 20px;
+}

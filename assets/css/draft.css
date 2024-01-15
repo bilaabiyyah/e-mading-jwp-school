@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: #427D9D;
+    height: 90px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #f8f9fa;
+}
+#logoutButton {
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#logoutButton:hover {
+    color: #0a354c;
+}
+.fa-user{
+    background-color: #F3F3F3;
+    padding: 10px;
+    border-radius: 5px;
+}
+.welcome-message{
+    padding: 20px;
+}
+.welcome-message .ml-2{
+    font-size: 15px;
+    font-weight: 600;
+}
+.title{
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(9, 25, 62);
+    font-weight: 600;
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-primary{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.card-body {
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card-text {
+    line-height: 1.5;
+}
+.footer {
+    position: relative; /* Change to relative to make it relative to its normal position */
+    width: 100%;
+    background-color: #c5dbf2;
+    padding: 10px 0;
+    margin-top: 10px; /* Add some spacing between content and footer */
+
+}
+.container{
+    background-color: #c5dbf2;
+    font-weight: 600;
+    text-align: right;
+}
+.logout-header{
+    background-color: #DA1212;
+    color: white;
+}
+.publish .btn-custom{
+    margin-right: 20px;
+    background-color: rgb(0, 49, 247);
+    color: white;
+}
+.publish .btn-custom:hover{
+    background-color: lightblue;
+    color: black;
+}

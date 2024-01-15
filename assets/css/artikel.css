@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Poppins';
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #427D9D;
+    height: 90px;
+}
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+#logoutButton {
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#logoutButton:hover {
+    color: #0a354c;
+}
+.container{
+    height: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content horizontally */
+}
+.content h2 {
+    color: #031d38;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.content p {
+    line-height: 2.0;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.article {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Ensures the image height adjusts proportionally */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Tambahkan margin untuk memberi ruang antara gambar dan teks */
+}
+
+.footer {
+    position: relative; /* Change to relative to make it relative to its normal position */
+    width: 100%;
+    background-color: #c5dbf2;
+    padding: 10px 0;
+    margin-top: 20px; /* Add some spacing between content and footer */
+}
+
+.content-footer {
+    background-color: #c5dbf2;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 70px;
+}
